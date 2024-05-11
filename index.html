@@ -1,0 +1,1631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Delivery In Dubai</title>
+    <!--font Awesome Link-->
+    <script src="https://kit.fontawesome.com/8cbc109b9d.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="/flowerBX/peony_primrose_peony_vase_4.jpg">
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 0.7rem;
+            font-weight: lighter;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        /*header*/
+        .headMessage {
+            width: 100%;
+            display: block;
+            text-align: center;
+            background-color: #9FEDD7;
+            font-family: 'Arial Narrow';
+            padding-top: 10px;
+            padding-bottom: 10px;
+            position: fixed;
+            z-index: 9;
+        }
+
+        .followBox {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #fff;
+            background-color: #026670;
+            padding-inline: 1rem;
+            box-sizing: border-box;
+            border-bottom: 1px solid #ffffff7c;
+            position: fixed;
+            top: 1.5rem;
+            z-index: 9;
+        }
+
+        .socialMedia_link {
+            display: block;
+            color: white;
+        }
+
+        .social_container {
+            display: flex;
+            gap: 30px;
+            padding-inline: 1rem;
+            box-sizing: border-box;
+        }
+
+        /*search box*/
+        .logo {
+            width: 10rem;
+            min-width: 5rem;
+        }
+
+        .searchBox {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2rem;
+            background-color: #026670;
+            padding-inline: 1rem;
+            padding-top: .5rem;
+            padding-bottom: .5rem;
+            box-sizing: border-box;
+            position: sticky;
+            top: 3.4rem;
+            z-index: 9;
+        }
+
+        .inputTypeSearch {
+            width: 10rem;
+            padding: .4rem .3rem;
+            box-sizing: border-box;
+            font-size: 0.6rem;
+        }
+
+        .miniSearchBox {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+        }
+
+        .icon {
+            font-size: .9rem;
+            color: #fff;
+        }
+
+        /*nav*/
+        nav {
+            width: 100%;
+            height: 2rem;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            background-color: #ffffff53;
+            box-shadow: 1px 5px 3px rgba(0, 0, 0, 0.247);
+            position: sticky;
+            top: 9rem;
+            z-index: 1;
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            gap: 3rem;
+            background-color: #fff;
+            z-index: 9;
+        }
+
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        li {
+            padding: .5rem;
+            box-sizing: border-box;
+            list-style-type: none;
+            font-size: 0.8rem;
+            font-family: 'Arial Narrow';
+        }
+
+        .bar {
+            font-size: 1.3rem;
+            position: absolute;
+            top: 0re;
+            left: 10px;
+            cursor: pointer;
+        }
+
+        .activeNav {
+            display: block !important;
+        }
+
+        /*about website*/
+        .about_container {
+            width: 100%;
+            height: 26vw;
+            max-height: 45rem;
+            position: relative;
+            padding-inline: 2rem;
+            box-sizing: border-box;
+            margin-top: 5rem;
+        }
+
+        .about_img {
+            width: inherit;
+            height: inherit;
+        }
+
+        .content {
+            width: 50%;
+            min-width: 30%;
+            height: 100%;
+            overflow-y: auto;
+            position: absolute;
+            color: #fff;
+            font-family: 'Arial Narrow';
+            text-align: center;
+            line-height: 1rem;
+            right: 2rem;
+            top: 3vw;
+        }
+
+        /*product container*/
+        .productCard_Main_Container {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            gap: 1.2rem;
+            padding-inline: 2rem;
+            box-sizing: border-box;
+            margin-top: 1rem;
+        }
+
+        .productCardContainer {
+            width: 10vw;
+            height: 13vw;
+            display: block;
+            text-align: center;
+            background-color: rgb(255, 254, 251);
+            box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.365);
+            position: relative;
+            transition: top .1s linear;
+        }
+
+        .productCardImage {
+            width: 100%;
+            height: 75%;
+        }
+
+        .productCardContainer:hover {
+            top: -10px;
+        }
+
+        /*second product container*/
+        .sectionFourth {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            gap: 8rem;
+            box-sizing: border-box;
+            position: relative;
+            border-top: 1px solid #00000010;
+            margin-top: 2rem;
+        }
+
+        .product_Main_Container {
+            width: calc(100% - 20%);
+            height: max-content;
+            position: relative;
+            right: 1.5rem;
+            margin-top: 0rem;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .productContainer {
+            width: 23%;
+            height: 25%;
+            background-color: #ffffff53;
+            box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.4);
+            margin-top: 3rem;
+            position: relative;
+        }
+
+        .sideContainer {
+            width: 12%;
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+            height: max-content;
+        }
+
+        .linkAddress {
+            width: 100%;
+            height: 100%;
+        }
+
+        .image {
+            width: 100%;
+            height: 20vw;
+        }
+
+        .miniContent {
+            font-weight: lighter;
+            width: 100%;
+            height: 20%;
+            margin-top: -1rem;
+        }
+
+        .miniContent>h4 {
+            font-family: Arial;
+            text-decoration: underline;
+        }
+
+        .message {
+            content: '';
+            width: 100%;
+            height: 20%;
+            font-size: 0.7rem;
+            font-family: 'Arial Narrow';
+            color: #fff;
+            background-color: #026670;
+            border: 1px solid #00000052;
+            position: absolute;
+            bottom: -3.5rem;
+            padding-top: .4rem;
+            box-sizing: border-box;
+            transition: all .1s linear;
+            z-index: 10;
+            opacity: 0;
+        }
+
+        .productContainer:hover .message {
+            bottom: -.75rem;
+            opacity: 1;
+        }
+
+        .productContainer:hover .miniContent {
+            opacity: 0;
+        }
+
+        .occasionContainer,
+        .arrangementContainer {
+            width: 100%;
+            height: auto;
+            position: relative;
+            top: 10rem;
+            left: 2rem;
+            border: 1px solid #00000052;
+            background-color: #ffffff53;
+            box-shadow: 1px 5px 10px #00000052;
+        }
+
+        .occasionContainer::before,
+        .arrangementContainer::before {
+            width: 100%;
+            font-size: 1rem;
+            font-family: 'Arial Narrow';
+            text-decoration: underline;
+            text-align: center;
+            position: absolute;
+            top: -1.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .occasionContainer::before {
+            content: 'Occasions';
+        }
+
+        .arrangementContainer::before {
+            content: 'Arrangement Type';
+        }
+
+        .OccasionList,
+        .arrangementList {
+            padding: .5rem 1rem;
+            box-sizing: border-box;
+        }
+
+        .OccasionList:hover,
+        .arrangementList:hover,
+        li:hover,
+        a:hover {
+            color: #026670;
+        }
+
+        /*information section*/
+        .informationSection {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            background-color: #9FEDD7;
+            width: 100%;
+            margin-top: 2rem;
+            padding-bottom: 1rem;
+            box-sizing: border-box;
+            border-bottom: 1px solid #fff;
+        }
+
+        .signupInputContainer,
+        .socialMediaSection,
+        .orderingContainer {
+            width: max-content;
+            text-align: center;
+        }
+
+        .signupInput,
+        .signupBtn {
+            font-size: .6rem;
+            padding: .8rem;
+            box-sizing: border-box;
+        }
+
+        .signupBtn {
+            width: max-content;
+            color: #fff;
+            background-color: #F37C15;
+            border: none;
+        }
+
+        /*footer*/
+        .footer {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto;
+            justify-content: space-evenly;
+            gap: 0.3rem;
+            padding-inline: 2rem;
+            box-sizing: border-box;
+            background-color: #9FEDD7;
+            padding-top: 5rem;
+        }
+
+        /*create before psuedo element for title for the mini sections in footer*/
+        .flowertoUAE,
+        .deliveryCity,
+        .info,
+        .eventContainer,
+        .miniOccassionContainer,
+        .collectionContainer {
+            position: relative;
+        }
+
+        .flowertoUAE::before,
+        .deliveryCity::before,
+        .info::before,
+        .eventContainer::before,
+        .miniOccassionContainer::before,
+        .collectionContainer::before {
+            position: absolute;
+            top: -2rem;
+            font-size: 1rem;
+            width: max-content;
+            height: auto;
+        }
+
+        .flowertoUAE::before {
+            content: 'Flower To UAE';
+        }
+
+        .deliveryCity::before {
+            content: 'Delivery City';
+        }
+
+        .info::before {
+            content: 'Info';
+        }
+
+        .eventContainer::before {
+            content: 'Upcoming Events';
+        }
+
+        .miniOccassionContainer::before {
+            content: 'Occassion';
+        }
+
+        .collectionContainer::before {
+            content: 'Collection';
+        }
+
+        @media (max-width: 1200px) {
+
+            /*nav*/
+            nav {
+                justify-content: center;
+            }
+
+            ul {
+                gap: 2vw;
+            }
+
+            li {
+                font-size: 1.5vw;
+            }
+
+            /*about website*/
+            /*product container*/
+            .productCard_Main_Container {
+                grid-template-columns: repeat(4, 1fr);
+                flex-wrap: wrap;
+            }
+
+            .productCardContainer {
+                width: 100%;
+                height: 22vw;
+            }
+
+            /*section fourth*/
+            .sectionFourth {
+                padding-inline: 2rem;
+                justify-content: center;
+            }
+
+            .product_Main_Container {
+                width: 100% !important;
+                right: 0;
+                height: auto;
+            }
+
+            .productContainer {
+                width: 20vw;
+                height: 25vw;
+            }
+
+            .sideContainer {
+                display: none;
+            }
+
+            .content {
+                height: 70%;
+            }
+
+            .content>p,
+            .content>h1 {
+                font-size: .7rem;
+            }
+        }
+
+        @media (max-width: 992px) {
+
+            /*information section*/
+            .informationSection {
+                gap: 2rem;
+            }
+
+            .socialMediaSection {
+                gap: 2rem;
+            }
+
+            /*sign up btn from information section*/
+            .signupInput {
+                width: 80%;
+            }
+
+            .signupBtn {
+                width: max-content;
+            }
+
+            /*nav*/
+            nav {
+                width: 100%;
+                flex-direction: column;
+            }
+
+            ul {
+                width: 30%;
+                height: 100%;
+                text-align: center;
+                padding-inline: 0rem;
+                color: #fff;
+                background-color: #026670;
+                position: fixed;
+                left: 0;
+                top: 10rem;
+            }
+
+            .OccasionList:hover,
+            .arrangementList:hover,
+            li:hover,
+            a:hover {
+                color: #fff !important;
+            }
+
+            li {
+                font-size: .9rem;
+                padding: 1rem;
+            }
+
+            /*footer*/
+            .footer {
+                grid-template-columns: auto auto auto;
+                gap: 3rem;
+            }
+
+            /*section fourth*/
+            .miniContent {
+                font-size: 0.4rem;
+                margin-top: -.8rem;
+            }
+
+            .message {
+                font-size: .4rem;
+            }
+
+            .productContainer:hover .message {
+                bottom: -.35rem;
+                height: auto;
+            }
+
+            /*information section*/
+            .signupInputContainer,
+            .socialMediaSection,
+            .orderingContainer {
+                width: 100%;
+            }
+
+            footer {
+                margin-top: 1rem;
+                font-size: 0.5rem;
+                padding-inline: 0rem;
+            }
+        }
+
+        @media (max-width: 789px) {
+            .headMessage {
+                font-size: 0.5rem;
+            }
+
+            .content>p {
+                display: none;
+            }
+
+            .content>h1 {
+                font-size: .7rem;
+            }
+
+            .content {
+                right: 2rem;
+            }
+
+        }
+
+        @media (max-width: 506px) {
+            .productCardTitle {
+                font-size: 0.5rem;
+            }
+
+            /*nav*/
+            nav {
+                top: 12.5rem !important;
+            }
+
+            ul {
+                top: 14rem !important;
+            }
+
+            /*searchBox*/
+            .inputTypeSearch {
+                width: 80vw;
+            }
+
+            /*searchbox*/
+            .searchBox {
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .productCard_Main_Container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .productCardContainer {
+                width: 70%;
+                margin: 0 auto;
+            }
+
+            /*footer*/
+            footer {
+                grid-template-columns: auto auto !important;
+            }
+        }
+
+        @media (max-width:300px) {
+
+            /*head message*/
+            .headMessage {
+                font-size: .3rem;
+            }
+
+            .logo {
+                width: 30%;
+            }
+
+            .about_img {
+                width: 100%;
+                height: 120%;
+                margin-top: .5rem;
+            }
+
+            .miniSearchBox {
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            nav {
+                position: fixed;
+                margin-top: -.6rem;
+            }
+
+            .productCard_Main_Container {
+                grid-template-columns: 1fr;
+                gap: 0rem;
+                margin-top: 3rem;
+            }
+
+            .productCardContainer {
+                width: 60%;
+                height: 60%;
+            }
+
+            .productCardTitle {
+                font-size: .8rem;
+            }
+
+            .product_Main_Container {
+                display: grid !important;
+                grid-template-columns: 1fr;
+                gap: 5rem;
+            }
+
+            .productContainer {
+                width: 100%;
+                height: 100%;
+                margin: 0 auto;
+            }
+
+            .image {
+                width: 100% !important;
+                height: 100% !important;
+            }
+
+            .miniContent {
+                font-size: .8rem;
+                height: 40%;
+            }
+
+            /*footer*/
+            .informationSection {
+                margin-top: 4rem;
+            }
+
+            .orderingContainer>img {
+                width: 80% !important;
+            }
+
+            footer {
+                margin-top: -2rem;
+                grid-template-columns: auto !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+        <script>
+        //header section
+
+        //head message
+
+        const headMessage = document.createElement("div");
+        headMessage.innerHTML = "Same Day Flower & Gifts delivery in... Abu Dhabi | Ajman | Al Ain | Dubai | Ras Al Khaimah | Sharjah ..Order Before 9 Pm";
+        headMessage.classList.add("headMessage")
+
+        //follow Box
+
+        const followBox = document.createElement("div");
+        followBox.classList.add("followBox");
+        const social_container = document.createElement("div");
+        social_container.classList.add("social_container");
+
+        const links_container = [
+            {
+                id: "1",
+                title: "facebook link",
+                link: "https://www.facebook.com/flowerstouae/",
+                className: "fa-brands fa-facebook-f",
+            },
+            {
+                id: "2",
+                title: "instagram link",
+                link: "https://www.instagram.com/flowerstouae_official/?r=nametag",
+                className: "fa-brands fa-instagram",
+            }
+        ]
+        for (let i = 0; i < links_container.length; i++) {
+            let currentIcon = links_container[i].className;
+            let currentLink = links_container[i].link;
+
+            const socialMedia_link = document.createElement("a");
+            socialMedia_link.classList.add("socialMedia_link")
+            socialMedia_link.href = currentLink;
+
+            const media_icon = document.createElement("i");
+            media_icon.className = currentIcon;
+            socialMedia_link.appendChild(media_icon);
+
+            social_container.appendChild(socialMedia_link);
+
+            followBox.appendChild(social_container);
+        }
+
+        const phoneNumber = document.createElement("p");
+        phoneNumber.innerHTML = "+959 9779779088";
+        followBox.append(phoneNumber)
+
+        //search Box
+
+        const searchBox = document.createElement("div");
+        searchBox.classList.add("searchBox");
+
+        const logo = document.createElement("img");
+        logo.classList.add("logo")
+        logo.src = "Logo-white.png";
+
+        const miniSearchBox = document.createElement("div");
+        miniSearchBox.classList.add("miniSearchBox")
+
+        const inputTypeSearch = document.createElement("input");
+        inputTypeSearch.type = "search";
+        inputTypeSearch.placeholder = "Search Flowers,Gifts,Cakes,etc...";
+        inputTypeSearch.classList.add("inputTypeSearch");
+
+        miniSearchBox.append(inputTypeSearch)
+
+        const iconsContainer = [
+            {
+                title: "question mark",
+                className: "fa-solid fa-question",
+                href: "https://kit.fontawesome.com/8cbc109b9d.js",
+            },
+            {
+                title: "cart",
+                className: "fa-solid fa-cart-shopping",
+                href: "https://kit.fontawesome.com/8cbc109b9d.js",
+            },
+            {
+                title: "log in",
+                className: "fa-solid fa-right-to-bracket",
+                href: "https://kit.fontawesome.com/8cbc109b9d.js",
+            },
+        ]
+        for (let i = 0; i < iconsContainer.length; i++) {
+            let iconsClassname = iconsContainer[i].className;
+
+            const link = document.createElement("a");
+            link.href = iconsContainer[i].href;
+
+            const icon = document.createElement("i");
+            icon.className = iconsClassname;
+            icon.classList.add("icon")
+
+            link.append(icon)
+            miniSearchBox.append(link);
+        }
+        searchBox.append(logo, miniSearchBox);
+
+
+        //nav
+
+        /*array for nav*/
+        const navListsContainer = [
+            {
+                title: "Flowers",
+                href: "https://flowerstouae.com/flower-delivery-dubai?gad=1&gclid=CjwKCAjwm4ukBhAuEiwA0zQxk7yWFf-FiMgaU-z2Jr_T01sRYowTWWeWqscGTr-lKzENTTZWmJqEsBoCgwsQAvD_BwE#",
+            },
+            {
+                title: "Birthday Flowers",
+                href: "https://flowerstouae.com/flower-delivery-dubai?gad=1&gclid=CjwKCAjwm4ukBhAuEiwA0zQxk7yWFf-FiMgaU-z2Jr_T01sRYowTWWeWqscGTr-lKzENTTZWmJqEsBoCgwsQAvD_BwE#",
+            },
+            {
+                title: "Occasion",
+                href: "https://flowerstouae.com/flower-delivery-dubai?gad=1&gclid=CjwKCAjwm4ukBhAuEiwA0zQxk7yWFf-FiMgaU-z2Jr_T01sRYowTWWeWqscGTr-lKzENTTZWmJqEsBoCgwsQAvD_BwE#",
+            },
+            {
+                title: "Cakes & Gifts",
+                href: "https://flowerstouae.com/flower-delivery-dubai?gad=1&gclid=CjwKCAjwm4ukBhAuEiwA0zQxk7yWFf-FiMgaU-z2Jr_T01sRYowTWWeWqscGTr-lKzENTTZWmJqEsBoCgwsQAvD_BwE#",
+            },
+            {
+                title: "Deals Zone",
+                href: "https://flowerstouae.com/flower-delivery-dubai?gad=1&gclid=CjwKCAjwm4ukBhAuEiwA0zQxk7yWFf-FiMgaU-z2Jr_T01sRYowTWWeWqscGTr-lKzENTTZWmJqEsBoCgwsQAvD_BwE#",
+            },
+            {
+                title: "By Color",
+                href: "https://flowerstouae.com/flower-delivery-dubai?gad=1&gclid=CjwKCAjwm4ukBhAuEiwA0zQxk7yWFf-FiMgaU-z2Jr_T01sRYowTWWeWqscGTr-lKzENTTZWmJqEsBoCgwsQAvD_BwE#",
+            },
+            {
+                title: "By Price",
+                href: "https://flowerstouae.com/flower-delivery-dubai?gad=1&gclid=CjwKCAjwm4ukBhAuEiwA0zQxk7yWFf-FiMgaU-z2Jr_T01sRYowTWWeWqscGTr-lKzENTTZWmJqEsBoCgwsQAvD_BwE#",
+            },
+            {
+                title: "Delivery Locations",
+                href: "https://flowerstouae.com/flower-delivery-dubai?gad=1&gclid=CjwKCAjwm4ukBhAuEiwA0zQxk7yWFf-FiMgaU-z2Jr_T01sRYowTWWeWqscGTr-lKzENTTZWmJqEsBoCgwsQAvD_BwE#",
+            },
+        ]
+        const ul = document.createElement("ul");
+
+        const nav = document.createElement("nav");
+
+
+        const bar = document.createElement("i");
+        bar.className = "fa-solid fa-bars";
+        bar.classList.add("bar")
+
+        for (let i = 0; i < navListsContainer.length; i++) {
+
+            const li = document.createElement("li");
+            li.innerHTML = navListsContainer[i].title;
+
+            const a = document.createElement("a");
+            a.href = navListsContainer.href;
+
+            a.append(li);
+
+            ul.append(a);
+
+            nav.append(bar, ul);
+        }
+        //responsive for bar icon for displaying none or block
+        if (window.innerWidth >= 992) {
+            bar.style.display = "none";
+        } else if (window.innerWidth < 992) {
+            bar.style.display = "block";
+            ul.style.display = "none";
+        }
+        bar.onclick = () => {
+            ul.classList.toggle("activeNav");
+            bar.classList.toggle("fa-xmark");
+        }
+
+
+        //about website
+
+        const about_container = document.createElement("div");
+        about_container.classList.add("about_container");
+
+        const about_img = document.createElement("img");
+        about_img.src = "img/city-banner.jpg";
+        about_img.classList.add("about_img")
+
+        const content = document.createElement("div");
+        content.classList.add("content");
+        const head_text = document.createElement("h1");
+        head_text.innerHTML = "Online Flower Delivery In Dubai";
+
+        const paragraph = document.createElement("p");
+        paragraph.innerHTML = "Flowers are the most powerful medium of different emotions. People are in loss of words when they are extremely emotional. Besides this, words cannot portray your feelings or emotions with accuracy because the depth of these emotions can be felt only by the people who are experiencing them. Send flowers online in Dubai for the complete portrayal of your love, possession, happiness, pride and also your negative emotions like anger, envy and grief. Flowers in different colours are apt for the portrayal of different emotions that a person undergoes throughout their life. Send flowers online through www.flowerstouae.com";
+
+        content.append(head_text, paragraph);
+
+        about_container.append(about_img, content);
+
+
+        //product container
+
+        /*this section is for the mini product card container*/
+        const rememberanceproducts = [
+            {
+                title: "Birthday",
+                src: "img/Birthday-Cake.jpg",
+                href: "https://flowerstouae.com/birthday-flowers-uae",
+            },
+            {
+                title: "Anivesary",
+                src: "img/Anniversary.jpg",
+                href: "https://flowerstouae.com/birthday-flowers-uae",
+            },
+            {
+                title: "Get Well Soon",
+                src: "img/Get-well-soon.jpg",
+                href: "https://flowerstouae.com/birthday-flowers-uae",
+            },
+            {
+                title: "Love",
+                src: "img/Love.jpg",
+                href: "https://flowerstouae.com/birthday-flowers-uae",
+            },
+            {
+                title: "For Her",
+                src: "img/for-her.jpg",
+                href: "https://flowerstouae.com/birthday-flowers-uae",
+            },
+            {
+                title: "Sorry",
+                src: "img/Sorry.jpg",
+                href: "https://flowerstouae.com/birthday-flowers-uae",
+            },
+            {
+                title: "Baby",
+                src: "img/Baby.jpg",
+                href: "https://flowerstouae.com/birthday-flowers-uae",
+            },
+            {
+                title: "Sympathy",
+                src: "img/sympathy.jpg",
+                href: "https://flowerstouae.com/birthday-flowers-uae",
+            },
+        ]
+
+        /*to beware there is another product card container variable in next section not to miss with these variable*/
+        const productCard_Main_Container = document.createElement("div");
+        productCard_Main_Container.classList.add("productCard_Main_Container");
+        for (let i = 0; i < rememberanceproducts.length; i++) {
+            const productCardContainer = document.createElement("div");
+            productCardContainer.classList.add("productCardContainer");
+
+            const productCardTitle = document.createElement("p");
+            productCardTitle.classList.add("productCardTitle")
+            productCardTitle.innerHTML = rememberanceproducts[i].title;
+
+            const productCardImage = document.createElement("img");
+            productCardImage.src = rememberanceproducts[i].src;
+            productCardImage.classList.add("productCardImage")
+
+            const imgLink = document.createElement("a");
+            imgLink.href = rememberanceproducts[i].href;
+
+            imgLink.append(productCardImage);
+
+            productCardContainer.append(imgLink, productCardTitle)
+
+            productCard_Main_Container.append(productCardContainer);
+
+        }
+
+
+        //section fourth container
+
+        /*this section is for the product that able to buy online*/
+        const product = [
+            {
+                title: "Softly Speaking",
+                price: "AED 169.00",
+                href: "https://flowerstouae.com/softly-speaking-1232",
+                src: "img/1619258620_6.jpg",
+                message: "The Stargazer Lily stands for prosperity, white roses for innocence and purity and pink of the flowers to live in the pink of...",
+            },
+            {
+                title: "Sunflower Sunshine",
+                price: "AED 199.00",
+                href: "https://flowerstouae.com/softly-speaking-1232",
+                src: "img/1619594180_let_pink_speak.jpg",
+                message: "The Stargazer Lily stands for prosperity, white roses for innocence and purity and pink of the flowers to live in the pink of...",
+            },
+            {
+                title: "Summer Medley Bouqet",
+                price: "AED 150.00",
+                href: "https://flowerstouae.com/softly-speaking-1232",
+                src: "img/1632375975_16222125671618204792_36.jpg",
+                message: "The Stargazer Lily stands for prosperity, white roses for innocence and purity and pink of the flowers to live in the pink of...",
+            },
+            {
+                title: "Glorious Pink",
+                price: "AED 122.00",
+                href: "https://flowerstouae.com/softly-speaking-1232",
+                src: "img/1632378163_FTULIL12.jpg",
+                message: "The Stargazer Lily stands for prosperity, white roses for innocence and purity and pink of the flowers to live in the pink of...",
+            },
+            {
+                title: "Elegant Red",
+                price: "AED 159.00",
+                href: "https://flowerstouae.com/softly-speaking-1232",
+                src: "img/1651300537_FTUNew12.webp",
+                message: "The Stargazer Lily stands for prosperity, white roses for innocence and purity and pink of the flowers to live in the pink of...",
+            },
+            {
+                title: "Tulips Forever",
+                price: "AED 199.00",
+                href: "https://flowerstouae.com/softly-speaking-1232",
+                src: "img/1662702802_1638165438_12.webp",
+                message: "The Stargazer Lily stands for prosperity, white roses for innocence and purity and pink of the flowers to live in the pink of...",
+            },
+            {
+                title: "She's Lovely",
+                price: "AED 189.00",
+                href: "https://flowerstouae.com/softly-speaking-1232",
+                src: "img/1662705489_19.png",
+                message: "The Stargazer Lily stands for prosperity, white roses for innocence and purity and pink of the flowers to live in the pink of...",
+            },
+            {
+                title: "Endless Love",
+                price: "AED 199.00",
+                href: "https://flowerstouae.com/softly-speaking-1232",
+                src: "img/1548582966_34.jpg",
+                message: "The Stargazer Lily stands for prosperity, white roses for innocence and purity and pink of the flowers to live in the pink of...",
+            },
+            {
+                title: "Pinkness",
+                price: "AED 189.00",
+                href: "https://flowerstouae.com/softly-speaking-1232",
+                src: "img/large_1225.jpg",
+                message: "The Stargazer Lily stands for prosperity, white roses for innocence and purity and pink of the flowers to live in the pink of...",
+            },
+            {
+                title: "Girlie And Pretty",
+                price: "AED 155.00",
+                href: "https://flowerstouae.com/softly-speaking-1232",
+                src: "img/large_1232.jpg",
+                message: "The Stargazer Lily stands for prosperity, white roses for innocence and purity and pink of the flowers to live in the pink of...",
+            },
+            {
+                title: "Love With Blue 100",
+                price: "AED 140.00",
+                href: "https://flowerstouae.com/softly-speaking-1232",
+                src: "img/large_1234.jpg",
+                message: "The Stargazer Lily stands for prosperity, white roses for innocence and purity and pink of the flowers to live in the pink of...",
+            },
+            {
+                title: "Spectacular Pink",
+                price: "AED 200.00",
+                href: "https://flowerstouae.com/softly-speaking-1232",
+                src: "img/large_1351.jpg",
+                message: "The Stargazer Lily stands for prosperity, white roses for innocence and purity and pink of the flowers to live in the pink of...",
+            },
+        ]
+        const product_Main_Container = document.createElement("div");
+        product_Main_Container.classList.add("product_Main_Container");
+
+        /*this variable is for the main container for section fourth*/
+        const sectionFourth = document.createElement("div");
+        sectionFourth.classList.add("sectionFourth");
+
+
+        for (let i = 0; i < product.length; i++) {
+            const productContainer = document.createElement("div");
+            productContainer.classList.add("productContainer");
+
+            const message = document.createElement("p");
+            message.innerHTML = product[i].message;
+
+            message.classList.add("message");
+
+            const image = document.createElement("img");
+            image.classList.add("image")
+            image.src = product[i].src;
+
+            const miniContent = document.createElement("div");
+            miniContent.classList.add("miniContent");
+
+            const titleForContent = document.createElement("h4");
+            titleForContent.innerHTML = product[i].title;
+
+            const priceTag = document.createElement("h5");
+            priceTag.innerHTML = product[i].price;
+
+            miniContent.append(titleForContent, priceTag);
+
+            const linkAddress = document.createElement("a");
+            linkAddress.classList.add("linkAddress")
+            linkAddress.href = product[i].href;
+
+            linkAddress.append(image);
+
+            productContainer.append(linkAddress, miniContent, message);
+            product_Main_Container.append(productContainer);
+
+            if (window.innerWidth < 993) {
+                miniContent.onclick = () => {
+                    message.style.bottom = "-1rem";
+                    message.style.opacity = "1";
+                }
+            }
+        }
+
+
+        /*side containers*/
+        const OccasionLists = [
+            {
+                title: "Best Seller",
+                href: "https://flowerstouae.com/best-seller-flowers-uae",
+            },
+            {
+                title: "Annivesary",
+                href: "https://flowerstouae.com/best-seller-flowers-uae",
+            },
+            {
+                title: "Birthday",
+                href: "https://flowerstouae.com/best-seller-flowers-uae",
+            },
+            {
+                title: "For Her",
+                href: "https://flowerstouae.com/best-seller-flowers-uae",
+            },
+            {
+                title: "For Him",
+                href: "https://flowerstouae.com/best-seller-flowers-uae",
+            },
+            {
+                title: "Funeral",
+                href: "https://flowerstouae.com/best-seller-flowers-uae",
+            },
+            {
+                title: "Get Well Soon",
+                href: "https://flowerstouae.com/best-seller-flowers-uae",
+            },
+            {
+                title: "Love",
+                href: "https://flowerstouae.com/best-seller-flowers-uae",
+            },
+            {
+                title: "New Baby",
+                href: "https://flowerstouae.com/best-seller-flowers-uae",
+            },
+            {
+                title: "Sympathy",
+                href: "https://flowerstouae.com/best-seller-flowers-uae",
+            },
+        ]
+        const OccasionContainer = document.createElement("div");
+        OccasionContainer.classList.add("occasionContainer")
+        for (let i = 0; i < OccasionLists.length; i++) {
+
+            const OccasionList = document.createElement("li");
+            OccasionList.classList.add("OccasionList")
+            OccasionList.innerHTML = OccasionLists[i].title;
+
+            const OccasionLink = document.createElement("a");
+            OccasionLink.href = OccasionLists[i].href;
+
+            OccasionLink.append(OccasionList);
+
+            OccasionContainer.append(OccasionLink);
+        }
+
+        const arrangementLists = [
+            {
+                title: "Exotic Flowers",
+                href: "https://flowerstouae.com/best-seller-flowers-uae",
+            },
+            {
+                title: "Flower Boxes",
+                href: "https://flowerstouae.com/best-seller-flowers-uae",
+            },
+            {
+                title: "Flowers In Basket",
+                href: "https://flowerstouae.com/best-seller-flowers-uae",
+            },
+            {
+                title: "Flowers In Glass Vase",
+                href: "https://flowerstouae.com/best-seller-flowers-uae",
+            },
+            {
+                title: "Hand Bouquet",
+                href: "https://flowerstouae.com/best-seller-flowers-uae",
+            },
+            {
+                title: "Flowers And Cakes",
+                href: "https://flowerstouae.com/best-seller-flowers-uae",
+            },
+        ]
+        const arrangementContainer = document.createElement("div");
+        arrangementContainer.classList.add("arrangementContainer")
+        for (let i = 0; i < arrangementLists.length; i++) {
+            const arrangementList = document.createElement("li");
+            arrangementList.classList.add("arrangementList");
+            arrangementList.innerHTML = arrangementLists[i].title;
+
+            const arrangementLink = document.createElement("a");
+            arrangementLink.href = arrangementLists[i].href;
+
+            arrangementLink.append(arrangementList);
+
+            arrangementContainer.append(arrangementLink);
+        }
+
+        /*side container variable*/
+        const sideContainer = document.createElement("div");
+        sideContainer.classList.add("sideContainer");
+
+        sideContainer.append(OccasionContainer, arrangementContainer);
+        sectionFourth.append(sideContainer, product_Main_Container);
+
+
+        //Sign Up Social and Payment section
+        //information section
+
+        const informationSection = document.createElement("div");
+        informationSection.classList.add("informationSection");
+
+        //sign up input
+        const infoSignup = document.createElement("h4");
+        infoSignup.innerHTML = "SIGN UP NOW!GET 10% OFF";
+
+        const signupInput = document.createElement("input");
+        signupInput.type = "email";
+        signupInput.placeholder = "Enter Your Email";
+        signupInput.classList.add("signupInput")
+
+        const signupBtn = document.createElement("button");
+        signupBtn.innerHTML = "SUBMIT";
+        signupBtn.classList.add("signupBtn")
+
+        const signupInputContainer = document.createElement("div");
+        signupInputContainer.classList.add("signupInputContainer")
+        signupInputContainer.append(infoSignup, signupInput, signupBtn);
+
+        //social media
+        const socialMediaSection = document.createElement("div");
+        socialMediaSection.classList.add("socialMediaSection")
+
+        const socialMediatitle = document.createElement("h4");
+        socialMediatitle.innerHTML = "CONNECT WITH US";
+        const socialMediaicon_link = document.createElement("a");
+
+        const socialMeidaIcons = [
+            {
+                //fb icon
+                src: "img/facebook-icon.png",
+                href: "https://flowerstouae.com/best-seller-flowers-uae",
+            },
+            {
+                //pintrest icon
+                src: "img/pintrest-icon.png",
+                href: "https://flowerstouae.com/best-seller-flowers-uae",
+            },
+            {
+                src: "img/twitter-icon.png",
+                href: "https://flowerstouae.com/best-seller-flowers-uae",
+            },
+            {
+                src: "img/instagram-icon.png",
+                href: "https://flowerstouae.com/best-seller-flowers-uae",
+            }
+        ]
+        for (let i = 0; i < socialMeidaIcons.length; i++) {
+
+            socialMediaicon_link.href = socialMeidaIcons[i].href;
+
+            const socialMeidaIcon = document.createElement("img");
+            socialMeidaIcon.src = socialMeidaIcons[i].src;
+
+            socialMediaicon_link.append(socialMeidaIcon);
+        }
+        socialMediaSection.append(socialMediatitle, socialMediaicon_link);
+
+        /*order menu*/
+        const orderingContainer = document.createElement("div");
+        orderingContainer.classList.add("orderingContainer")
+
+        const orderTitle = document.createElement("h4")
+        orderTitle.innerHTML = "SECURE ORDERING & TRANSACTION";
+
+        const orderImage = document.createElement("img")
+        orderImage.src = "all_payment_icons.png";
+        orderImage.style.width = "20rem"
+
+        orderingContainer.append(orderTitle, orderImage);
+
+        informationSection.append(signupInputContainer, socialMediaSection, orderingContainer);
+        informationSection.classList.add("informationSection")
+
+
+        //footer
+
+        const footer = document.createElement("footer");
+        footer.classList.add("footer")
+
+        //flower to uae mini section
+        const flowerstoUAElist = [
+            {
+                title: "HOME",
+                href: "https://flowerstouae.com/flower-delivery-dubai?gad=1&gclid=CjwKCAjwm4ukBhAuEiwA0zQxk7yWFf-FiMgaU-z2Jr_T01sRYowTWWeWqscGTr-lKzENTTZWmJqEsBoCgwsQAvD_BwE#",
+            },
+            {
+                title: "ABOUT US",
+                href: "https://flowerstouae.com/flower-delivery-dubai?gad=1&gclid=CjwKCAjwm4ukBhAuEiwA0zQxk7yWFf-FiMgaU-z2Jr_T01sRYowTWWeWqscGTr-lKzENTTZWmJqEsBoCgwsQAvD_BwE#",
+            },
+            {
+                title: "OUR REVIEWS",
+                href: "https://flowerstouae.com/flower-delivery-dubai?gad=1&gclid=CjwKCAjwm4ukBhAuEiwA0zQxk7yWFf-FiMgaU-z2Jr_T01sRYowTWWeWqscGTr-lKzENTTZWmJqEsBoCgwsQAvD_BwE#",
+            },
+            {
+                title: "FLOWER BLOGS",
+                href: "https://flowerstouae.com/flower-delivery-dubai?gad=1&gclid=CjwKCAjwm4ukBhAuEiwA0zQxk7yWFf-FiMgaU-z2Jr_T01sRYowTWWeWqscGTr-lKzENTTZWmJqEsBoCgwsQAvD_BwE#",
+            },
+            {
+                title: "FLOWER CARE",
+                href: "https://flowerstouae.com/flower-delivery-dubai?gad=1&gclid=CjwKCAjwm4ukBhAuEiwA0zQxk7yWFf-FiMgaU-z2Jr_T01sRYowTWWeWqscGTr-lKzENTTZWmJqEsBoCgwsQAvD_BwE#",
+            },
+            {
+                title: "CONTACT US",
+                href: "https://flowerstouae.com/flower-delivery-dubai?gad=1&gclid=CjwKCAjwm4ukBhAuEiwA0zQxk7yWFf-FiMgaU-z2Jr_T01sRYowTWWeWqscGTr-lKzENTTZWmJqEsBoCgwsQAvD_BwE#",
+            },
+            {
+                title: "SIDE MAP",
+                href: "https://flowerstouae.com/flower-delivery-dubai?gad=1&gclid=CjwKCAjwm4ukBhAuEiwA0zQxk7yWFf-FiMgaU-z2Jr_T01sRYowTWWeWqscGTr-lKzENTTZWmJqEsBoCgwsQAvD_BwE#",
+            },
+        ]
+        const flowertoUAE = document.createElement("div");
+        flowertoUAE.classList.add("flowertoUAE");
+
+        for (let i = 0; i < flowerstoUAElist.length; i++) {
+            const flowerstoUAElistLink = document.createElement("a");
+            flowerstoUAElistLink.href = flowerstoUAElist[i].href;
+
+            const flowerstoUAElistName = document.createElement("p");
+            flowerstoUAElistName.innerHTML = flowerstoUAElist[i].title;
+
+            flowerstoUAElistLink.append(flowerstoUAElistName);
+
+            flowertoUAE.append(flowerstoUAElistLink);
+        }
+
+        //delivery cities mini section
+        const deliveryCities = [
+            {
+                title: "Dubai",
+                href: "https://flowerstouae.com/flower-delivery-dubai?gad=1&gclid=CjwKCAjwm4ukBhAuEiwA0zQxk7yWFf-FiMgaU-z2Jr_T01sRYowTWWeWqscGTr-lKzENTTZWmJqEsBoCgwsQAvD_BwE#",
+            },
+            {
+                title: "Abu Dubai",
+                href: "https://flowerstouae.com/flower-delivery-dubai?gad=1&gclid=CjwKCAjwm4ukBhAuEiwA0zQxk7yWFf-FiMgaU-z2Jr_T01sRYowTWWeWqscGTr-lKzENTTZWmJqEsBoCgwsQAvD_BwE#",
+            },
+            {
+                title: "Sharaj",
+                href: "https://flowerstouae.com/flower-delivery-dubai?gad=1&gclid=CjwKCAjwm4ukBhAuEiwA0zQxk7yWFf-FiMgaU-z2Jr_T01sRYowTWWeWqscGTr-lKzENTTZWmJqEsBoCgwsQAvD_BwE#",
+            },
+            {
+                title: "Ajman",
+                href: "https://flowerstouae.com/flower-delivery-dubai?gad=1&gclid=CjwKCAjwm4ukBhAuEiwA0zQxk7yWFf-FiMgaU-z2Jr_T01sRYowTWWeWqscGTr-lKzENTTZWmJqEsBoCgwsQAvD_BwE#",
+            },
+            {
+                title: "Al Ain",
+                href: "https://flowerstouae.com/flower-delivery-dubai?gad=1&gclid=CjwKCAjwm4ukBhAuEiwA0zQxk7yWFf-FiMgaU-z2Jr_T01sRYowTWWeWqscGTr-lKzENTTZWmJqEsBoCgwsQAvD_BwE#",
+            },
+            {
+                title: "Umm Al Quwain",
+                href: "https://flowerstouae.com/flower-delivery-dubai?gad=1&gclid=CjwKCAjwm4ukBhAuEiwA0zQxk7yWFf-FiMgaU-z2Jr_T01sRYowTWWeWqscGTr-lKzENTTZWmJqEsBoCgwsQAvD_BwE#",
+            },
+            {
+                title: "Ras Al Khaimah",
+                href: "https://flowerstouae.com/flower-delivery-dubai?gad=1&gclid=CjwKCAjwm4ukBhAuEiwA0zQxk7yWFf-FiMgaU-z2Jr_T01sRYowTWWeWqscGTr-lKzENTTZWmJqEsBoCgwsQAvD_BwE#",
+            },
+        ]
+
+        const deliveryCity = document.createElement("div");
+        deliveryCity.classList.add("deliveryCity");
+
+        for (let i = 0; i < deliveryCities.length; i++) {
+            const deliveryCitiesLink = document.createElement("a");
+            deliveryCitiesLink.href = deliveryCities[i].href;
+
+            const deliveryCitiesName = document.createElement("p");
+            deliveryCitiesName.innerHTML = deliveryCities[i].title;
+
+            deliveryCitiesLink.append(deliveryCitiesName);
+
+            deliveryCity.append(deliveryCitiesLink);
+        }
+
+        //info mini section
+        const infos = [
+            {
+                title: "My Account",
+                href: "https://flowerstouae.com/flower-delivery-dubai?gad=1&gclid=CjwKCAjwm4ukBhAuEiwA0zQxk7yWFf-FiMgaU-z2Jr_T01sRYowTWWeWqscGTr-lKzENTTZWmJqEsBoCgwsQAvD_BwE#",
+            },
+            {
+                title: "Login",
+                href: "https://flowerstouae.com/flower-delivery-dubai?gad=1&gclid=CjwKCAjwm4ukBhAuEiwA0zQxk7yWFf-FiMgaU-z2Jr_T01sRYowTWWeWqscGTr-lKzENTTZWmJqEsBoCgwsQAvD_BwE#",
+            },
+            {
+                title: "Order Flowers",
+                href: "https://flowerstouae.com/flower-delivery-dubai?gad=1&gclid=CjwKCAjwm4ukBhAuEiwA0zQxk7yWFf-FiMgaU-z2Jr_T01sRYowTWWeWqscGTr-lKzENTTZWmJqEsBoCgwsQAvD_BwE#",
+            },
+            {
+                title: "FAQ's",
+                href: "https://flowerstouae.com/flower-delivery-dubai?gad=1&gclid=CjwKCAjwm4ukBhAuEiwA0zQxk7yWFf-FiMgaU-z2Jr_T01sRYowTWWeWqscGTr-lKzENTTZWmJqEsBoCgwsQAvD_BwE#",
+            },
+            {
+                title: "Terms & Conditions",
+                href: "https://flowerstouae.com/flower-delivery-dubai?gad=1&gclid=CjwKCAjwm4ukBhAuEiwA0zQxk7yWFf-FiMgaU-z2Jr_T01sRYowTWWeWqscGTr-lKzENTTZWmJqEsBoCgwsQAvD_BwE#",
+            },
+            {
+                title: "Privacy Policy",
+                href: "https://flowerstouae.com/flower-delivery-dubai?gad=1&gclid=CjwKCAjwm4ukBhAuEiwA0zQxk7yWFf-FiMgaU-z2Jr_T01sRYowTWWeWqscGTr-lKzENTTZWmJqEsBoCgwsQAvD_BwE#",
+            },
+            {
+                title: "Refund Polocy",
+                href: "https://flowerstouae.com/flower-delivery-dubai?gad=1&gclid=CjwKCAjwm4ukBhAuEiwA0zQxk7yWFf-FiMgaU-z2Jr_T01sRYowTWWeWqscGTr-lKzENTTZWmJqEsBoCgwsQAvD_BwE#",
+            },
+        ]
+
+        const info = document.createElement("div");
+        info.classList.add("info")
+        for (let i = 0; i < infos.length; i++) {
+
+            const infosLink = document.createElement("a");
+            infosLink.href = infos[i].href;
+
+            const infosName = document.createElement("p");
+            infosName.innerHTML = infos[i].title;
+
+            infosLink.append(infosName);
+
+            info.append(infosLink);
+        }
+
+        //events mini setion
+        const events = [
+            {
+                title: "UAE National Day",
+                href: "https://flowerstouae.com/flower-delivery-dubai?gad=1&gclid=CjwKCAjwm4ukBhAuEiwA0zQxk7yWFf-FiMgaU-z2Jr_T01sRYowTWWeWqscGTr-lKzENTTZWmJqEsBoCgwsQAvD_BwE#",
+            },
+            {
+                title: "Christmas Collection",
+                href: "https://flowerstouae.com/flower-delivery-dubai?gad=1&gclid=CjwKCAjwm4ukBhAuEiwA0zQxk7yWFf-FiMgaU-z2Jr_T01sRYowTWWeWqscGTr-lKzENTTZWmJqEsBoCgwsQAvD_BwE#",
+            },
+            {
+                title: "New Year's Collection",
+                href: "https://flowerstouae.com/flower-delivery-dubai?gad=1&gclid=CjwKCAjwm4ukBhAuEiwA0zQxk7yWFf-FiMgaU-z2Jr_T01sRYowTWWeWqscGTr-lKzENTTZWmJqEsBoCgwsQAvD_BwE#",
+            },
+            {
+                title: "Valenntine Day Flower",
+                href: "https://flowerstouae.com/flower-delivery-dubai?gad=1&gclid=CjwKCAjwm4ukBhAuEiwA0zQxk7yWFf-FiMgaU-z2Jr_T01sRYowTWWeWqscGTr-lKzENTTZWmJqEsBoCgwsQAvD_BwE#",
+            },
+            {
+                title: "Mother Day Flower",
+                href: "https://flowerstouae.com/flower-delivery-dubai?gad=1&gclid=CjwKCAjwm4ukBhAuEiwA0zQxk7yWFf-FiMgaU-z2Jr_T01sRYowTWWeWqscGTr-lKzENTTZWmJqEsBoCgwsQAvD_BwE#",
+            },
+            {
+                title: "Women Day Flower",
+                href: "https://flowerstouae.com/flower-delivery-dubai?gad=1&gclid=CjwKCAjwm4ukBhAuEiwA0zQxk7yWFf-FiMgaU-z2Jr_T01sRYowTWWeWqscGTr-lKzENTTZWmJqEsBoCgwsQAvD_BwE#",
+            },
+            {
+                title: "RAMADAN Flower",
+                href: "https://flowerstouae.com/flower-delivery-dubai?gad=1&gclid=CjwKCAjwm4ukBhAuEiwA0zQxk7yWFf-FiMgaU-z2Jr_T01sRYowTWWeWqscGTr-lKzENTTZWmJqEsBoCgwsQAvD_BwE#",
+            },
+        ]
+
+        const eventContainer = document.createElement("div");
+        eventContainer.classList.add("eventContainer")
+        for (let i = 0; i < events.length; i++) {
+
+            const eventsLink = document.createElement("a");
+            eventsLink.href = events[i].href;
+
+            const eventsName = document.createElement("p");
+            eventsName.innerHTML = events[i].title;
+
+            eventsLink.append(eventsName);
+
+            eventContainer.append(eventsLink);
+        }
+
+
+        //occassion mini section
+        //to beware there is another occassion in side bar container
+        const occassion = [
+            {
+                title: "Birthday Flowers",
+                href: "https://flowerstouae.com/flower-delivery-dubai?gad=1&gclid=CjwKCAjwm4ukBhAuEiwA0zQxk7yWFf-FiMgaU-z2Jr_T01sRYowTWWeWqscGTr-lKzENTTZWmJqEsBoCgwsQAvD_BwE#",
+            },
+            {
+                title: "Aniversary Flowers",
+                href: "https://flowerstouae.com/flower-delivery-dubai?gad=1&gclid=CjwKCAjwm4ukBhAuEiwA0zQxk7yWFf-FiMgaU-z2Jr_T01sRYowTWWeWqscGTr-lKzENTTZWmJqEsBoCgwsQAvD_BwE#",
+            },
+            {
+                title: "New Baby Flowers",
+                href: "https://flowerstouae.com/flower-delivery-dubai?gad=1&gclid=CjwKCAjwm4ukBhAuEiwA0zQxk7yWFf-FiMgaU-z2Jr_T01sRYowTWWeWqscGTr-lKzENTTZWmJqEsBoCgwsQAvD_BwE#",
+            },
+            {
+                title: "Love & Romance",
+                href: "https://flowerstouae.com/flower-delivery-dubai?gad=1&gclid=CjwKCAjwm4ukBhAuEiwA0zQxk7yWFf-FiMgaU-z2Jr_T01sRYowTWWeWqscGTr-lKzENTTZWmJqEsBoCgwsQAvD_BwE#",
+            },
+            {
+                title: "Get Well Soon",
+                href: "https://flowerstouae.com/flower-delivery-dubai?gad=1&gclid=CjwKCAjwm4ukBhAuEiwA0zQxk7yWFf-FiMgaU-z2Jr_T01sRYowTWWeWqscGTr-lKzENTTZWmJqEsBoCgwsQAvD_BwE#",
+            },
+            {
+                title: "Thank You flowers",
+                href: "https://flowerstouae.com/flower-delivery-dubai?gad=1&gclid=CjwKCAjwm4ukBhAuEiwA0zQxk7yWFf-FiMgaU-z2Jr_T01sRYowTWWeWqscGTr-lKzENTTZWmJqEsBoCgwsQAvD_BwE#",
+            },
+            {
+                title: "I am Sorry Flowers",
+                href: "https://flowerstouae.com/flower-delivery-dubai?gad=1&gclid=CjwKCAjwm4ukBhAuEiwA0zQxk7yWFf-FiMgaU-z2Jr_T01sRYowTWWeWqscGTr-lKzENTTZWmJqEsBoCgwsQAvD_BwE#",
+            },
+        ]
+
+        const miniOccassionContainer = document.createElement("div");
+
+        /*to beware there is another occassionContainer in section fourth*/
+        miniOccassionContainer.classList.add("miniOccassionContainer")
+        for (let i = 0; i < occassion.length; i++) {
+
+            const occassionsLink = document.createElement("a");
+            occassionsLink.href = occassion[i].href;
+
+            const occassionsName = document.createElement("p");
+            occassionsName.innerHTML = occassion[i].title;
+
+            occassionsLink.append(occassionsName);
+
+            miniOccassionContainer.append(occassionsLink);
+        }
+
+        //collection mini section
+        const collections = [
+            {
+                title: "Luxury Collection",
+                href: "https://flowerstouae.com/flower-delivery-dubai?gad=1&gclid=CjwKCAjwm4ukBhAuEiwA0zQxk7yWFf-FiMgaU-z2Jr_T01sRYowTWWeWqscGTr-lKzENTTZWmJqEsBoCgwsQAvD_BwE#",
+            },
+            {
+                title: "Rose Collection",
+                href: "https://flowerstouae.com/flower-delivery-dubai?gad=1&gclid=CjwKCAjwm4ukBhAuEiwA0zQxk7yWFf-FiMgaU-z2Jr_T01sRYowTWWeWqscGTr-lKzENTTZWmJqEsBoCgwsQAvD_BwE#",
+            },
+            {
+                title: "Autumn Collection",
+                href: "https://flowerstouae.com/flower-delivery-dubai?gad=1&gclid=CjwKCAjwm4ukBhAuEiwA0zQxk7yWFf-FiMgaU-z2Jr_T01sRYowTWWeWqscGTr-lKzENTTZWmJqEsBoCgwsQAvD_BwE#",
+            },
+            {
+                title: "Garden Rose Collection",
+                href: "https://flowerstouae.com/flower-delivery-dubai?gad=1&gclid=CjwKCAjwm4ukBhAuEiwA0zQxk7yWFf-FiMgaU-z2Jr_T01sRYowTWWeWqscGTr-lKzENTTZWmJqEsBoCgwsQAvD_BwE#",
+            },
+            {
+                title: "Sunflower Collection",
+                href: "https://flowerstouae.com/flower-delivery-dubai?gad=1&gclid=CjwKCAjwm4ukBhAuEiwA0zQxk7yWFf-FiMgaU-z2Jr_T01sRYowTWWeWqscGTr-lKzENTTZWmJqEsBoCgwsQAvD_BwE#",
+            },
+            {
+                title: "Orchid Plants",
+                href: "https://flowerstouae.com/flower-delivery-dubai?gad=1&gclid=CjwKCAjwm4ukBhAuEiwA0zQxk7yWFf-FiMgaU-z2Jr_T01sRYowTWWeWqscGTr-lKzENTTZWmJqEsBoCgwsQAvD_BwE#",
+            },
+            {
+                title: "Extras",
+                href: "https://flowerstouae.com/flower-delivery-dubai?gad=1&gclid=CjwKCAjwm4ukBhAuEiwA0zQxk7yWFf-FiMgaU-z2Jr_T01sRYowTWWeWqscGTr-lKzENTTZWmJqEsBoCgwsQAvD_BwE#",
+            },
+        ]
+
+        const collectionContainer = document.createElement("div");
+        collectionContainer.classList.add("collectionContainer")
+        for (let i = 0; i < collections.length; i++) {
+
+            const collectionsLink = document.createElement("a");
+            collectionsLink.href = collections[i].href;
+
+            const collectionsName = document.createElement("p");
+            collectionsName.innerHTML = collections[i].title;
+
+            collectionsLink.append(collectionsName);
+
+            collectionContainer.append(collectionsLink);
+        }
+        footer.append(flowertoUAE, deliveryCity, info, eventContainer, miniOccassionContainer, collectionContainer);
+
+
+        document.body.append(headMessage,
+            followBox,
+            searchBox,
+            nav,
+            about_container,
+            productCard_Main_Container,
+            sectionFourth,
+            informationSection,
+            footer)
+
+    </script>
+
+</body>
+
+</html>
